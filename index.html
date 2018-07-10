@@ -220,7 +220,10 @@
                 <h3>Aoife Sweeney</h3>
               </div>
               <div class="gif">
-                <video autoplay loop src="img/self_gif.mp4"></video>
+                <video autoplay loop>
+                  <source src="img/jumping_gif.mp4" type="video/mp4">
+                  <source src="img/jumping_gif.ogg" type="video/ogg">
+                </video>
               </div>
             </div>
           </div>
@@ -327,15 +330,6 @@
     </div>
   </section>
 
-  <!-- Reveal -->
-  <!-- <section class="section-reveal">
-    <div class="reveal">
-      <img src="img/jslider_plain_light.png" alt="light">
-      <img class="reveal-target" src="img/jslider_plain_dark.png" alt="dark">
-      <div class="handle" onmousemove="reveal(event)"></div>
-    </div>
-  </section> -->
-
   <!-- Projects -->
   <section class="bg-dark-color">
     <div class="container project-flip-container">
@@ -345,7 +339,7 @@
           <a target="_blank" href="http://world-wanders.herokuapp.com/index.html">
             <div class="head-w-wanders">
               <div class="project-image">
-                <img src="img/world_wanders_large_400x300.jpg">
+                <img src="img/world_wanders_large_400x300.jpg" alt="world-wanders">
               </div>
             </div>
             <div class="text">
@@ -353,16 +347,13 @@
                 <strong>World Wanders(Frontend)</strong>
               </p>
             </div>
-            <!-- <div class="project-tool-tip">
-              <span>Tooltip Text</span>
-            </div> -->
           </a>
         </div>
         <div class="col-md-4 project">
           <a target="_blank" href="https://calm-temple-71042.herokuapp.com/users/login">
             <div class="head-appjot">
               <div class="project-image">
-                <img src="img/AppJot_400x300.jpg">
+                <img src="img/AppJot_400x300.jpg" alt="appjot">
               </div>
             </div>
             <div class="text">
@@ -376,7 +367,7 @@
           <a target="_blank" href="http://landingpageexample.herokuapp.com/index.html">
             <div class="head-landing-p">
               <div class="project-image">
-                <img src="img/Landing_Page_400x300.jpg">
+                <img src="img/Landing_Page_400x300.jpg" alt="landing-p">
               </div>
             </div>
             <div class="text">
@@ -411,9 +402,9 @@
   <section class="parallax-bg project-flip-container">
     <div class="container">
       <h3>Communication and Customer Care</h3>
-      <p>I have gained an abundance of experience working with clients. Communicating with the clients throughout
-        the development lifecycle; establishing requirements, design, development and testing, and providing demo's to ensure that the development meets the requirements based
-        on the specifications provided.</p>
+      <p>I have gained an abundance of experience working with clients. Communicating with the clients throughout the development
+        lifecycle; establishing requirements, design, development and testing, and providing demo's to ensure that the development
+        meets the requirements based on the specifications provided.</p>
       <div class="project-btn">
         <a class="sidebar-btn" href="#sidebar" onclick="toggleSidebar()">More</a>
       </div>
