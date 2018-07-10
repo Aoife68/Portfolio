@@ -126,7 +126,6 @@ body {
 
 .project-btn {
   padding-bottom: 24px;
-  /* margin-left: 50%; */
 }
 
 /* Parallax Showcase*/
@@ -169,9 +168,76 @@ body {
   transition: box-shadow 83ms;
 }
 
+.showcase-content {
+  position: relative;
+  height: 500px;
+  margin-left: 35%;
+}
+
 .profile-card {
+  position: absolute;
+  width: 380px;
+  height: 500px;
+  margin: 0 auto 0;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.profile-card:hover {
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.profile-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  width: 380px;
+  height: 500px;
+}
+
+.profile-front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  width: 380px;
+  height: 500px;
+}
+
+.profile-front .card-body {
+  text-align: center;
+}
+
+.gif {
+  width: 240px;
+  height: 410px;
+}
+
+.gif video {
+  height: 25em;
+  padding-bottom: 70px;
+  padding-left: 55px;
+}
+
+.gif-content {
+  color: #006b75;
+  text-align: center;
+}
+
+/* .jumping_gif{
   width: 35%;
   margin: 0 auto 0;
+  height: 490px;
+} */
+
+.jumping_gif video {
+  width: 100%;
+  margin: 0 auto 0;
+  height: 30em;
 }
 
 .profile-img-card {
@@ -203,15 +269,25 @@ body {
 }
 
 /*Main Content*/
+.section-height h3,
+.project-flip-container h3 {
+  color: #f4f4f4;
+  text-align: center;
+}
 
+.javascript-flex h3 {
+  color: #25292e;
+}
 
-.section-height h3 {
+.javaSql h3 {
   color: #f4f4f4;
 }
 
 .bg-light {
   color: #333;
 }
+
+/*MEAN - Flip Card*/
 
 .flip-card {
   width: 12em;
@@ -274,13 +350,15 @@ body {
 }
 
 .flip-card:hover .front {
+  -moz-transform: perspective(600px) rotateY(-180deg);
   -webkit-transform: perspective(600px) rotateY(-180deg);
   transform: perspective(600px) rotateY(-180deg);
 }
 
 .flip-card:hover .back {
-  -webkit-transform: perspective(600px) rotateY(0);
-  transform: perspective(600px) rotateY(0);
+  -moz-transform: perspective(600px) rotateY(0deg);
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
 }
 
 #angular {
@@ -301,7 +379,7 @@ body {
 
 /*Javascript and JQuery Slider*/
 
- .javascript-flex {
+.javascript-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +388,6 @@ body {
 .javascript-flex {
   text-align: center;
 }
-
 
 /*Projects*/
 .project-flip-container {
@@ -340,6 +417,39 @@ body {
   border-top-right-radius: 7px;
 }
 
+.project {
+  position: relative;
+  display: inline-block;
+}
+
+/* .project .project-tool-tip {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  bottom: 125%;
+  background: green;
+  transition: opacity 1s;
+  visibility: hidden;
+  width: 125px;
+  padding: 6px 0;
+  border-radius: 7px;
+}
+
+.project .project-tool-tip:after {
+  content: "";
+  top: 100%;
+  left: 50%;
+  position: absolute;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+  border-width: 5px;
+}
+
+.project:hover {
+  visibility: visible;
+  opacity: 1;
+} */
+
 .project a {
   margin-left: 10px;
   text-decoration: none;
@@ -347,9 +457,9 @@ body {
   font-size: 1.2em;
 }
 
-.project a .head-w-wanders, .project a
-.head-appjot, .project a
-.head-landing-p {
+.project a .head-w-wanders,
+.project a .head-appjot,
+.project a .head-landing-p {
   background: #006b75;
   width: 14em;
   height: 7em;
@@ -369,6 +479,17 @@ body {
   color: #333;
 }
 
+.project a:hover .text {
+  background: #eaeaea;
+  color: #006b75;
+}
+
+.project a:hover .head-w-wanders,
+.project a:hover .head-appjot,
+.project a:hover .head-landing-p {
+  opacity: 0.7;
+}
+
 .project a .text p {
   padding: 5px;
 }
@@ -378,17 +499,49 @@ body {
 }
 
 .head-appjot {
-  background: #9a1220; 
+  background: #9a1220;
 }
 
 .head-landing-p {
-  background: #007399; 
+  background: #007399;
 }
 
 .label-icon {
   margin: 5px;
   height: 150px;
 }
+
+/*Reveal*/
+/* .section-reveal{
+  position: relative;
+  height: 500px;
+}
+
+.reveal{
+  width: 100%;
+  height: 500px;
+  border: #000 1px solid;
+  float: left;
+  background: #000;
+}
+
+.reveal img{
+  position: absolute;
+  width: 100%;
+  height:500px;
+}
+
+.reveal .reveal-target{
+  clip:rect(0px, 661px, 500px, 0px); /*top right bottom left*/
+/*}
+
+.reveal .handle{
+  position: absolute;
+  width:100%;
+  height: 500px;
+  opacity: 0;
+  cursor: e-resize;
+} */
 
 /*Footer*/
 .footer-flex {
@@ -417,9 +570,9 @@ body {
 /*Media*/
 @media (max-width: 1024px) {
   /*Projects*/
-  .project a .head-w-wanders, .project a
-  .head-appjot, .project a
-  .head-landing-p {
+  .project a .head-w-wanders,
+  .project a .head-appjot,
+  .project a .head-landing-p {
     width: 12em;
   }
 
@@ -445,14 +598,32 @@ body {
   }
 
   /*profile*/
+
+  .showcase-content {
+    position: relative;
+    height: 500px;
+    margin-left: 0%;
+  }
+
   .profile-card {
     width: 100%;
     margin: 0 auto 0;
   }
+  .profile-front {
+    width: 500px;
+  }
 
-  .j-slider-content-body {
-    font-size: 75%;
-    line-height: 1.2em;
+  .profile-back {
+    width: 500px;
+  }
+
+  .gif {
+    width: 410px;
+  }
+
+  .gif-video {
+    height: 25em;
+    margin-left: 12%;
   }
 
   .parallax-bg {
@@ -483,9 +654,9 @@ body {
   }
 
   /*Projects*/
-  .project a .head-w-wanders, .project a
-  .head-appjot, .project a
-  .head-landing-p {
+  .project a .head-w-wanders,
+  .project a .head-appjot,
+  .project a .head-landing-p {
     width: 16em;
   }
 
@@ -504,51 +675,101 @@ body {
 }
 
 @media (max-width: 375px) {
+  /*Profile*/
+  .gif {
+    width: 300px;
+  }
+
+  .gif-content {
+    margin-right: 0px;
+  }
+
+  .gif video {
+    margin-left: -60px;
+  }
+
+  .profile-back {
+    width: 320px;
+  }
+  .profile-front {
+    width: 320px;
+  }
+  .showcase-text-content {
+    font-size: 0.9em;
+  }
+
   /*MEAN -Flip Card*/
   .flip-card {
-    width: 15em;
-    height: 16em;
+    width: 17em;
+    height: 18em;
   }
   .front {
-    width: 15em;
-    height: 16em;
+    width: 17em;
+    height: 18em;
   }
 
   .front img {
-    width: 15em;
-    height: 16em;
-    margin-top: -100px;
+    width: 17em;
+    height: 18em;
+    margin-top: -111px;
   }
 
   .back {
-    width: 15em;
-    height: 16em;
+    width: 17em;
+    height: 18em;
   }
 
- /*Projects*/
- .project a .head-w-wanders, .project a
- .head-appjot,  .project a
- .head-landing-p {
-   width: 12em;
-   height: 10em;
- }
+  /*JavaScript*/
+  .javascript-flex {
+    display: block;
+  }
 
- .project a .text {
-   width: 12em;
-   height: 4em;
- }
+  /*Projects*/
+  .project a .head-w-wanders,
+  .project a .head-appjot,
+  .project a .head-landing-p {
+    width: 14em;
+    height: 10em;
+  }
 
- .project-image img {
-   width: 12em;
-   height: 10em;
- }
+  .project a .text {
+    width: 14em;
+    height: 4em;
+  }
 
- .project-btn {
-   margin-left: 0%;
- }
+  .project-image img {
+    width: 14em;
+    height: 10em;
+  }
+
+  .project-btn {
+    margin-left: 0%;
+  }
 }
 
 @media (max-width: 320px) {
+  /*Profile*/
+  .gif {
+    width: 280px;
+  }
+
+  .gif-content {
+    margin-left: -30px;
+  }
+
+  .gif video {
+    margin-left: -99px;
+  }
+
+  .profile-back {
+    width: 280px;
+  }
+  .profile-front {
+    width: 300px;
+  }
+  .showcase-text-content {
+    font-size: 0.8em;
+  }
   /*MEAN -Flip Card*/
   .flip-card {
     width: 14em;
@@ -571,9 +792,9 @@ body {
   }
 
   /*Projects*/
-  .project a .head-w-wanders, .project a
-  .head-appjot,  .project a
-  .head-landing-p {
+  .project a .head-w-wanders,
+  .project a .head-appjot,
+  .project a .head-landing-p {
     width: 11.5em;
     height: 10em;
   }
