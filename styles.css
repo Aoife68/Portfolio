@@ -275,7 +275,6 @@ body {
   text-align: center;
 }
 
-/*Javascript*/
 .javaSql h3 {
   color: #f4f4f4 !important;
 }
@@ -285,7 +284,6 @@ body {
 }
 
 /*MEAN - Flip Card*/
-
 .flip-card {
   width: 12em;
   height: 14em;
@@ -450,6 +448,21 @@ body {
   display: inline-block;
 }
 
+/*Tooltip*/
+.tooltip{
+  position: relative;
+  z-index:20;
+  color:#f4f4f4;
+}
+
+.tooltip span{
+  display:none;
+}
+
+.tooltip:hover{
+  z-index:21;
+}
+
 /* .project .project-tool-tip {
   position: absolute;
   z-index: 1;
@@ -585,6 +598,19 @@ body {
   .project a {
     font-size: 1.2em;
   }
+
+  .reveal img{
+    width: 414px;
+    margin-left: -207px;
+  }
+
+  .reveal .img2{
+    clip:rect(0px, 203px, 280px, 0px)
+  }
+
+  .reveal .handle{
+    width: 414px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -595,7 +621,6 @@ body {
   }
 
   /*profile*/
-
   .showcase-content {
     position: relative;
     height: 500px;
@@ -648,6 +673,27 @@ body {
     width: 12em;
     height: 14em;
     margin-bottom: 15px;
+  }
+
+  /*Reveal*/
+  .javascript-flex{
+    display:block;
+  }
+
+  .reveal{
+    width: 500px;
+  }
+  .reveal img{
+    width: 414px;
+    margin-left: -233px;
+  }
+
+  .reveal .img2{
+    clip:rect(0px, 202px, 280px, 0px)
+  }
+
+  .reveal .handle{
+    width: 414px;
   }
 
   /*Projects*/
@@ -717,8 +763,24 @@ body {
   }
 
   /*JavaScript*/
-  .javascript-flex {
+  /* .javascript-flex {
     display: block;
+  } */
+
+  .reveal{
+    width: 300px;
+  }
+  .reveal img{
+    width: 300px;
+    margin-left: -160px;
+  }
+
+  .reveal .img2{
+    clip:rect(0px, 147px, 280px, 0px)
+  }
+
+  .reveal .handle{
+    width: 300px;
   }
 
   /*Projects*/
@@ -786,6 +848,16 @@ body {
   .back {
     width: 14em;
     height: 16em;
+  }
+
+  /*Reveal*/
+  .reveal img{
+    width: 300px;
+    margin-left: -193px;
+  }
+
+  .reveal .img2{
+    clip:rect(0px, 146px, 280px, 0px)
   }
 
   /*Projects*/
