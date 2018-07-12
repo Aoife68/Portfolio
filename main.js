@@ -26,5 +26,5 @@ function toggleSidebar() {
 
 /*Reveal SQL and Java*/
 function reveal(event){
-  event.target.previousElementSibling.style.clip = "rect(0px "+(event.clientX-event.target.offsetLeft)+"px, 500px, 0px)";
-  console.log( event.target.previousElementSibling.style.clip);}
+  event.target.previousElementSibling.style.clip = "rect(0px, "+(event.clientX-event.target.offsetLeft)+"px, 280px, 0px)";  
+}
