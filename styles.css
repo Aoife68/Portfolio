@@ -690,6 +690,10 @@ body {
   }
 
   /*Projects*/
+  .project {
+    margin-left: 70px;
+  }
+
   .project a .head-w-wanders,
   .project a .head-appjot,
   .project a .head-landing-p {
@@ -755,11 +759,6 @@ body {
     height: 18em;
   }
 
-  /*JavaScript*/
-  /* .javascript-flex {
-    display: block;
-  } */
-
   .reveal {
     width: 300px;
   }
@@ -777,6 +776,10 @@ body {
   }
 
   /*Projects*/
+  .project {
+    margin-left: 0;
+  }
+
   .project a .head-w-wanders,
   .project a .head-appjot,
   .project a .head-landing-p {
