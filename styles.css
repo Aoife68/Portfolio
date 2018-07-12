@@ -228,12 +228,6 @@ body {
   text-align: center;
 }
 
-/* .jumping_gif{
-  width: 35%;
-  margin: 0 auto 0;
-  height: 490px;
-} */
-
 .jumping_gif video {
   width: 100%;
   margin: 0 auto 0;
@@ -383,31 +377,31 @@ body {
   text-align: center;
 }
 
-.reveal{
-	width: 1700px;
-	height: 250px;
-	/* border:#000 1px solid; */
-	float:left;
-	margin:24px;
+.reveal {
+  width: 1700px;
+  height: 250px;
+  /* border:#000 1px solid; */
+  float: left;
+  margin: 24px;
 }
-.reveal  img{
-  position:absolute;
+.reveal img {
+  position: absolute;
   width: 500px;
   height: 250px;
   margin-left: -250px;
 }
-.reveal  .img2{
-	clip:rect(0px, 246px, 280px, 0px); /* top, right, bottom, left */ 
+.reveal .img2 {
+  clip: rect(0px, 246px, 280px, 0px); /* top, right, bottom, left */
 }
-.reveal  .handle{
-	position:absolute;
-	width:500px;
-	height:250px;
-	opacity:0;
-	cursor: e-resize;
+.reveal .handle {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  opacity: 0;
+  cursor: e-resize;
 }
 
-.javascript-text{
+.javascript-text {
   padding-top: 48px;
 }
 
@@ -449,18 +443,18 @@ body {
 }
 
 /*Tooltip*/
-.tooltip{
+.tooltip {
   position: relative;
-  z-index:20;
-  color:#f4f4f4;
+  z-index: 20;
+  color: #f4f4f4;
 }
 
-.tooltip span{
-  display:none;
+.tooltip span {
+  display: none;
 }
 
-.tooltip:hover{
-  z-index:21;
+.tooltip:hover {
+  z-index: 21;
 }
 
 /* .project .project-tool-tip {
@@ -552,7 +546,6 @@ body {
   height: 150px;
 }
 
-
 /*Footer*/
 .footer-flex {
   display: flex;
@@ -599,16 +592,16 @@ body {
     font-size: 1.2em;
   }
 
-  .reveal img{
+  .reveal img {
     width: 414px;
     margin-left: -207px;
   }
 
-  .reveal .img2{
-    clip:rect(0px, 203px, 280px, 0px)
+  .reveal .img2 {
+    clip: rect(0px, 203px, 280px, 0px);
   }
 
-  .reveal .handle{
+  .reveal .handle {
     width: 414px;
   }
 }
@@ -676,23 +669,23 @@ body {
   }
 
   /*Reveal*/
-  .javascript-flex{
-    display:block;
+  .javascript-flex {
+    display: block;
   }
 
-  .reveal{
+  .reveal {
     width: 500px;
   }
-  .reveal img{
+  .reveal img {
     width: 414px;
     margin-left: -233px;
   }
 
-  .reveal .img2{
-    clip:rect(0px, 202px, 280px, 0px)
+  .reveal .img2 {
+    clip: rect(0px, 202px, 280px, 0px);
   }
 
-  .reveal .handle{
+  .reveal .handle {
     width: 414px;
   }
 
@@ -767,19 +760,19 @@ body {
     display: block;
   } */
 
-  .reveal{
+  .reveal {
     width: 300px;
   }
-  .reveal img{
+  .reveal img {
     width: 300px;
     margin-left: -160px;
   }
 
-  .reveal .img2{
-    clip:rect(0px, 147px, 280px, 0px)
+  .reveal .img2 {
+    clip: rect(0px, 147px, 280px, 0px);
   }
 
-  .reveal .handle{
+  .reveal .handle {
     width: 300px;
   }
 
@@ -851,13 +844,13 @@ body {
   }
 
   /*Reveal*/
-  .reveal img{
+  .reveal img {
     width: 300px;
     margin-left: -193px;
   }
 
-  .reveal .img2{
-    clip:rect(0px, 146px, 280px, 0px)
+  .reveal .img2 {
+    clip: rect(0px, 146px, 280px, 0px);
   }
 
   /*Projects*/
